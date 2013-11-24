@@ -5,7 +5,7 @@ Summary:	%{modname} - MongoDB database driver
 Summary(pl.UTF-8):	%{modname} - dostęp do bazy danych MongoDB
 Name:		%{php_name}-pecl-%{modname}
 Version:	1.4.5
-Release:	1
+Release:	2
 License:	Apache v2.0
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
@@ -15,6 +15,7 @@ BuildRequires:	%{php_name}-devel >= 3:5.1.0
 BuildRequires:	rpmbuild(macros) >= 1.650
 %{?requires_php_extension}
 Requires:	php(core) >= 5.1.0
+Provides:	php(%{modname}) = %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
