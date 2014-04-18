@@ -1,16 +1,22 @@
+# TODO
+# - Enabling enterprise features:
+#   To connect to MongoDB Enterprise using SASL (GSSAPI) or LDAP (PLAIN) you
+#   need to build the driver against cyrus-sasl2 (external library).
+# NOTE
+# - see comprehensive release notes here https://github.com/mongodb/mongo-php-driver/releases
 %define		php_name	php%{?php_suffix}
 %define		modname	mongo
 %define		status		stable
 Summary:	%{modname} - MongoDB database driver
 Summary(pl.UTF-8):	%{modname} - dostęp do bazy danych MongoDB
 Name:		%{php_name}-pecl-%{modname}
-Version:	1.4.5
-Release:	2
+Version:	1.5.1
+Release:	1
 License:	Apache v2.0
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
-# Source0-md5:	8b66be083ee26f0039454efca978c0a6
-URL:		http://pecl.php.net/package/mongo
+# Source0-md5:	6519ec3c50a4d4b6cf15ffffadb3ffea
+URL:		http://docs.mongodb.org/ecosystem/drivers/php/
 BuildRequires:	%{php_name}-devel >= 3:5.1.0
 BuildRequires:	rpmbuild(macros) >= 1.650
 %{?requires_php_extension}
