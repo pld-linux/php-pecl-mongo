@@ -10,14 +10,14 @@
 Summary:	%{modname} - MongoDB database driver
 Summary(pl.UTF-8):	%{modname} - dostęp do bazy danych MongoDB
 Name:		%{php_name}-pecl-%{modname}
-Version:	1.6.14
+Version:	1.6.16
 Release:	1
 License:	Apache v2.0
 Group:		Development/Languages/PHP
-Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
-# Source0-md5:	19cd8bd94494f924ce8314f304fd83b6
-URL:		http://docs.mongodb.org/ecosystem/drivers/php/
-BuildRequires:	%{php_name}-devel >= 3:5.1.0
+Source0:	https://pecl.php.net/get/%{modname}-%{version}.tgz
+# Source0-md5:	cde37cae4fafbb66903ce81d44f7f492
+URL:		https://docs.mongodb.com/ecosystem/drivers/php/
+BuildRequires:	%{php_name}-devel >= 3:5.3.0
 BuildRequires:	rpmbuild(macros) >= 1.650
 %{?requires_php_extension}
 Provides:	php(%{modname}) = %{version}
