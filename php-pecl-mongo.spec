@@ -11,7 +11,7 @@ Summary:	%{modname} - MongoDB database driver
 Summary(pl.UTF-8):	%{modname} - dostęp do bazy danych MongoDB
 Name:		%{php_name}-pecl-%{modname}
 Version:	1.6.16
-Release:	1
+Release:	2
 License:	Apache v2.0
 Group:		Development/Languages/PHP
 Source0:	https://pecl.php.net/get/%{modname}-%{version}.tgz
